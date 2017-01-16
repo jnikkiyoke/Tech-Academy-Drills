@@ -1,0 +1,79 @@
+
+body {
+	background: #fff ;
+}
+
+.wrap {
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+}
+
+.menu-container {
+	top: 0;
+	left: 0;
+	/* TO THE TOP EDGE OF THE SCREEN */
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+}
+
+.menu {
+	font: bold 13px/19px "Calibri";
+	text-align: center;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu li {
+	color: #ababab;
+	display: inline-block;
+	margin-right: -2px;
+	position: relative;
+	padding: 12px 40px;
+	border: 1px solid #ababab;
+	border-radius: 0px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.menu li:hover {
+	background-color: #fff;
+	color: #ff4daf;
+}
+
+.menu li:hover ul {
+	display: block;
+	opacity: 1;
+	/*While hovered, drop-down menu appears.
+	This also avoids a block-level bug */
+	visibility: visible;
+}
+
+.submenu  {
+	padding: 0;
+	left: 0;
+	top: 43.5px;
+	width: 125.5px;
+	position: absolute;
+	opacity: 0;
+	/*While not being hovered, drop-down menu hides.
+	This also avoids a block-level bug*/
+	visibility: hidden;
+}
+
+.submenu li {
+	background-color: #fff;
+	display: block;
+	color: #ababab;
+}
+
+.submenu li:hover {
+	background-color: #fff;
+	color: #ff4daf;
+	}
+
+

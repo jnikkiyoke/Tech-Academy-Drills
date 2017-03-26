@@ -31,7 +31,7 @@ def describe_game(name):
         playing again and continue with the game.
     """
     if name != "": # meaning, if we do not already have this user's name, then they are a new player and we need to get their name
-                 print("\nThanks for palying again, {}!".format(name))
+                 print("\nThanks for playing again, {}!".format(name))
     else:
         stop = True
         while stop:
